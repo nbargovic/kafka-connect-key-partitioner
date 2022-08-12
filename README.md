@@ -1,4 +1,4 @@
-# kafka-connect-sftp-xml
+# kafka-connect-key-partitioner
 Custom Connect storage partitioner that will use the Kafka message key to partition data.  When used with the SFTP Sink Connector, all messages with the same key will land in the same directory.
 
 For example the output directory and file name will be: `<prefix>/topics/<topic-name>/key=<msg-key>/<topic-name>+<kafkaPartition>+<startOffset>.<format>`
